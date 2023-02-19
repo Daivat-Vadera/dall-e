@@ -19,7 +19,7 @@ function CreatePost() {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('https://dall-e-jp7p.onrender.com/api/v1/post', {
+        const response = await fetch('https://dall-e-be.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ function CreatePost() {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch("https://dall-e-jp7p.onrender.com/api/v1/dalle", {
+        const response = await fetch("https://dall-e-be.onrender.com/api/v1/dalle", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
